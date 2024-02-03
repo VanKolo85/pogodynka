@@ -36,4 +36,7 @@ class MeasurementRepository extends ServiceEntityRepository
         $result = $query->getResult();
         return $result;
     }
+
+
+
 }

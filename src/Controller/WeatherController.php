@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class WeatherController extends AbstractController
 {
-    #[Route('/weather/{city}/{country?PL}', name: 'app_weather', requirements: ['id' => '\d+'])]
+    #[Route('/weather/{country}/{city}', name: 'app_weather', requirements: ['id' => '\d+'])]
     public function city(
         #[MapEntity(mapping: ['country' => 'country', 'city' => 'city'])]
         Location $location,
