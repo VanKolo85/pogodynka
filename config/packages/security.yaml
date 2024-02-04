@@ -30,7 +30,7 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        - { path: ^/, roles: PUBLIC_ACCESS }
+         - { path: ^/, roles: PUBLIC_ACCESS }
 
     role_hierarchy:
         ROLE_ADMIN:
@@ -58,6 +58,7 @@ security:
             - ROLE_MEASUREMENT_NEW
             - ROLE_MEASUREMENT_EDIT
             - ROLE_MEASUREMENT_DELETE
+
 when@test:
     security:
         password_hashers:
